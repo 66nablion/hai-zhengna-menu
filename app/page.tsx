@@ -1,14 +1,39 @@
 'use client';
 import { useState } from 'react';
 
+type MenuItem = {
+  id: number;
+  name: string;
+  ordinary?: number | null;
+  jumbo?: number | null;
+  small?: number | null;
+  medium?: number | null;
+  price?: number;
+};
+
+type CartItem = MenuItem & {
+  type: string;
+  price: number;
+  qty: number;
+};
+
+type DeliveryInfo = {
+  area: string;
+  street: string;
+  building: string;
+  floor: string;
+  apartment: string;
+  phone: string;
+};
+
 export default function RestaurantMenu() {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState<CartItem[]>([]);
   const [orderType, setOrderType] = useState('delivery');
-  const [deliveryInfo, setDeliveryInfo] = useState({
+  const [deliveryInfo, setDeliveryInfo] = useState<DeliveryInfo>({
     area: '', street: '', building: '', floor: '', apartment: '', phone: ''
   });
 
-  const menuSections = [
+  const menuSections: { category: string; image: string; items: MenuItem[] }[] = [
     {
       category: "سندوتشات",
       image: "/images/menu/sandwiches.jpg",
@@ -112,7 +137,7 @@ export default function RestaurantMenu() {
     }
   ];
 
-  const addToCart = (item, type = 'طلب', price) => {
+  const addToCart = (item: MenuItem, type: string = 'طلب', price: number) => {
     setCart(prev => {
       const existing = prev.find(i => i.id === item.id && i.type === type);
       if (existing) {
@@ -122,7 +147,7 @@ export default function RestaurantMenu() {
     });
   };
 
-  const updateQty = (id, type, delta) => {
+  const updateQty = (id: number, type: string, delta: number) => {
     setCart(prev => {
       return prev.map(item => {
         if (item.id === id && item.type === type) {
@@ -130,7 +155,7 @@ export default function RestaurantMenu() {
           return newQty > 0 ? { ...item, qty: newQty } : null;
         }
         return item;
-      }).filter(Boolean);
+      }).filter(Boolean) as CartItem[];
     });
   };
 
@@ -178,7 +203,7 @@ export default function RestaurantMenu() {
                   src={sec.image}
                   alt={sec.category}
                   className="w-20 h-20 object-cover rounded-full border-4 border-amber-500 shadow-xl bg-amber-900"
-                  onError={(e) => { e.target.style.display = 'none'; }}
+                  onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                 />
               </div>
 
@@ -192,27 +217,27 @@ export default function RestaurantMenu() {
                     <span className="font-medium text-amber-100 text-sm">{item.name}</span>
                     <div className="flex gap-2 text-xs">
                       {item.price !== undefined && (
-                        <button onClick={() => addToCart(item, 'أساسي', item.price)} className="bg-amber-600 hover:bg-amber-500 text-zinc-950 font-bold px-3 py-1 rounded">
+                        <button onClick={() => addToCart(item, 'أساسي', item.price!)} className="bg-amber-600 hover:bg-amber-500 text-zinc-950 font-bold px-3 py-1 rounded">
                           السعر: {item.price} ج.س
                         </button>
                       )}
-                      {item.ordinary !== undefined && item.ordinary !== null && !item.small && (
-                        <button onClick={() => addToCart(item, 'عادي', item.ordinary)} className="bg-amber-900/90 hover:bg-amber-700 text-amber-200 px-2 py-1 rounded">
+                      {item.ordinary !== undefined && item.ordinary !== null && item.small === undefined && (
+                        <button onClick={() => addToCart(item, 'عادي', item.ordinary!)} className="bg-amber-900/90 hover:bg-amber-700 text-amber-200 px-2 py-1 rounded">
                           عادي: {item.ordinary}
                         </button>
                       )}
                       {item.jumbo !== undefined && item.jumbo !== null && (
-                        <button onClick={() => addToCart(item, 'جامبو', item.jumbo)} className="bg-amber-600 hover:bg-amber-500 text-zinc-950 font-bold px-2 py-1 rounded">
+                        <button onClick={() => addToCart(item, 'جامبو', item.jumbo!)} className="bg-amber-600 hover:bg-amber-500 text-zinc-950 font-bold px-2 py-1 rounded">
                           جامبو: {item.jumbo}
                         </button>
                       )}
                       {item.small !== undefined && (
-                        <button onClick={() => addToCart(item, 'وسط', item.small)} className="bg-amber-900/90 hover:bg-amber-700 text-amber-200 px-2 py-1 rounded">
+                        <button onClick={() => addToCart(item, 'وسط', item.small!)} className="bg-amber-900/90 hover:bg-amber-700 text-amber-200 px-2 py-1 rounded">
                           وسط: {item.small}
                         </button>
                       )}
                       {item.medium !== undefined && (
-                        <button onClick={() => addToCart(item, 'كبير', item.medium)} className="bg-amber-600 hover:bg-amber-500 text-zinc-950 font-bold px-2 py-1 rounded">
+                        <button onClick={() => addToCart(item, 'كبير', item.medium!)} className="bg-amber-600 hover:bg-amber-500 text-zinc-950 font-bold px-2 py-1 rounded">
                           كبير: {item.medium}
                         </button>
                       )}
