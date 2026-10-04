@@ -38,9 +38,9 @@ export default function RestaurantMenu() {
       category: "سندوتشات",
       image: "/images/menu/sandwiches.jpg",
       items: [
-        { id: 1, name: "اقانشي لحم", ordinary: 90, jumbo: 135 },
-        { id: 2, name: "اقانشي فراخ", ordinary: 85, jumbo: 120 },
-        { id: 3, name: "اقانشي سمك", ordinary: 95, jumbo: 140 },
+        { id: 1, name: "اقاشي لحم", ordinary: 90, jumbo: 135 },
+        { id: 2, name: "اقاشي فراخ", ordinary: 85, jumbo: 120 },
+        { id: 3, name: "اقاشي سمك", ordinary: 95, jumbo: 140 },
         { id: 4, name: "شيش طاووق", ordinary: 80, jumbo: 120 },
         { id: 5, name: "شيش كباب", ordinary: 120, jumbo: 150 },
         { id: 6, name: "كفتة", ordinary: 110, jumbo: 140 },
@@ -56,8 +56,8 @@ export default function RestaurantMenu() {
         { id: 10, name: "كيلو شية ضاني جمر / صاج", ordinary: 850 },
         { id: 11, name: "كيلو شية ضاني صافي جمر / صاج", ordinary: 1500 },
         { id: 12, name: "كيلو فلتو لحم صافي صاج", ordinary: 1000 },
-        { id: 13, name: "كيلو أقانشي فراخ", ordinary: 1000 },
-        { id: 14, name: "كيلو أقانشي لحم", ordinary: 1250 },
+        { id: 13, name: "كيلو أقاشي فراخ", ordinary: 1000 },
+        { id: 14, name: "كيلو أقاشي لحم", ordinary: 1250 },
         { id: 15, name: "كيلو فيليه سمك مشوي / مقلي", ordinary: 600 }
       ]
     },
@@ -65,9 +65,9 @@ export default function RestaurantMenu() {
       category: "الوجبات",
       image: "/images/menu/meals.jpg",
       items: [
-        { id: 16, name: "وجبة أقانشي لحم (3 أسياخ)", ordinary: 250 },
-        { id: 17, name: "وجبة أقانشي فراخ (3 أسياخ)", ordinary: 200 },
-        { id: 18, name: "وجبة أقانشي سمك (3 أسياخ)", ordinary: 235 },
+        { id: 16, name: "وجبة أقاشي لحم (3 أسياخ)", ordinary: 250 },
+        { id: 17, name: "وجبة أقاشي فراخ (3 أسياخ)", ordinary: 200 },
+        { id: 18, name: "وجبة أقاشي سمك (3 أسياخ)", ordinary: 235 },
         { id: 19, name: "وجبة شيش طاووق (3 أسياخ)", ordinary: 230 },
         { id: 20, name: "وجبة شيش كباب (3 أسياخ)", ordinary: 320 },
         { id: 21, name: "وجبة كفتة (3 أسياخ)", ordinary: 280 },
@@ -99,7 +99,7 @@ export default function RestaurantMenu() {
         { id: 35, name: "طحينية", price: 40 },
         { id: 36, name: "سلطة خضراء", price: 50 },
         { id: 37, name: "سلطة دقوة", price: 30 },
-        { id: 38, name: "مخلل", price: 0 }
+        { id: 38, name: "مخلل", price: 30 }
       ]
     },
     {
