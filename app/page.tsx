@@ -40,9 +40,9 @@ export default function RestaurantMenu() {
       category: "سندوتشات",
       image: "/images/menu/sandwiches.jpg",
       items: [
-        { id: 1, name: "اقانشي لحم", ordinary: 90, jumbo: 135 },
-        { id: 2, name: "اقانشي فراخ", ordinary: 85, jumbo: 120 },
-        { id: 3, name: "اقانشي سمك", ordinary: 95, jumbo: 140 },
+        { id: 1, name: "اقاشي لحم", ordinary: 90, jumbo: 135 },
+        { id: 2, name: "اقاشي فراخ", ordinary: 85, jumbo: 120 },
+        { id: 3, name: "اقاشي سمك", ordinary: 95, jumbo: 140 },
         { id: 4, name: "شيش طاووق", ordinary: 85, jumbo: 120 },
         { id: 5, name: "شيش كباب", ordinary: 120, jumbo: 150 },
         { id: 6, name: "كفتة", ordinary: 110, jumbo: 140 },
@@ -58,8 +58,8 @@ export default function RestaurantMenu() {
         { id: 10, name: "كيلو شية ضاني جمر / صاج", ordinary: 850 },
         { id: 11, name: "كيلو شية ضاني صافي جمر / صاج", ordinary: 1500 },
         { id: 12, name: "كيلو فلتو لحم صافي صاج", ordinary: 1000 },
-        { id: 13, name: "كيلو أقانشي فراخ", ordinary: 1000 },
-        { id: 14, name: "كيلو أقانشي لحم", ordinary: 1250 },
+        { id: 13, name: "كيلو اقاشي فراخ", ordinary: 1000 },
+        { id: 14, name: "كيلو اقاشي لحم", ordinary: 1250 },
         { id: 15, name: "كيلو فيليه سمك مشوي / مقلي", ordinary: 600 }
       ]
     },
@@ -67,10 +67,10 @@ export default function RestaurantMenu() {
       category: "الوجبات",
       image: "/images/menu/meals.jpg",
       items: [
-        { id: 16, name: "وجبة أقانشي لحم (3 أسياخ)", ordinary: 250 },
-        { id: 17, name: "وجبة أقانشي فراخ (3 أسياخ)", ordinary: 200 },
-        { id: 18, name: "وجبة أقانشي سمك (3 أسياخ)", ordinary: 235 },
-        { id: 19, name: "وجبة شيش طاووق (3 أسياخ)", ordinary: 230 },
+        { id: 16, name: "وجبة اقاشي لحم (3 أسياخ)", ordinary: 230 },
+        { id: 17, name: "وجبة اقاشي فراخ (3 أسياخ)", ordinary: 200 },
+        { id: 18, name: "وجبة اقاشي سمك (3 أسياخ)", ordinary: 235 },
+        { id: 19, name: "وجبة شيش طاووق (3 أسياخ)", ordinary: 235 },
         { id: 20, name: "وجبة شيش كباب (3 أسياخ)", ordinary: 320 },
         { id: 21, name: "وجبة كفتة (3 أسياخ)", ordinary: 280 },
         { id: 22, name: "وجبة كريسبي", ordinary: 250 },
@@ -96,45 +96,44 @@ export default function RestaurantMenu() {
       items: [
         { id: 31, name: "زيادة عيشة", price: 5 },
         { id: 32, name: "زيادة 3 عيشات", price: 10 },
-        { id: 33, name: "شطة بصل", price: 20 },
-        { id: 34, name: "دكينية", price: 30 },
-        { id: 35, name: "طحينية", price: 40 },
-        { id: 36, name: "سلطة خضراء", price: 50 },
-        { id: 37, name: "سلطة دكوة", price: 30 },
-        { id: 38, name: "مخلل", price: 0 }
+        { id: 33, name: "شطة و بصل", price: 25 },
+        { id: 34, name: "طحينة", price: 30 },
+        { id: 35, name: "سلطة خضراء", price: 40 },
+        { id: 36, name: "سلطة دكوة", price: 50 },
+        { id: 37, name: "مخلل", price: 30 }
       ]
     },
     {
       category: "العصائر والمشروبات",
       image: "/images/menu/juices.jpg",
       items: [
-        { id: 39, name: "فراولة", price: 55 },
-        { id: 40, name: "فراولة بالحليب", price: 65 },
-        { id: 41, name: "مانجو", price: 60 },
-        { id: 42, name: "مانجو بالحليب", price: 70 },
-        { id: 43, name: "موز بالحليب", price: 60 },
-        { id: 44, name: "عصير كوكتيل", price: 70 },
-        { id: 45, name: "برتقال", price: 50 },
-        { id: 46, name: "ليمون", price: 45 },
-        { id: 47, name: "ليمون نعناع", price: 50 },
-        { id: 48, name: "عرديب", price: 70 },
-        { id: 49, name: "كركدي", price: 55 },
-        { id: 50, name: "مشروبات غازية", price: 35 },
-        { id: 51, name: "مياه معدنية", price: 10 }
+        { id: 38, name: "فراولة", price: 55 },
+        { id: 39, name: "فراولة بالحليب", price: 65 },
+        { id: 40, name: "مانجو", price: 60 },
+        { id: 41, name: "مانجو بالحليب", price: 70 },
+        { id: 42, name: "موز بالحليب", price: 65 },
+        { id: 43, name: "عصير كوكتيل", price: 70 },
+        { id: 44, name: "برتقال", price: 50 },
+        { id: 45, name: "ليمون", price: 45 },
+        { id: 46, name: "ليمون نعناع", price: 50 },
+        { id: 47, name: "عرديب", price: 70 },
+        { id: 48, name: "كركدي", price: 50 },
+        { id: 49, name: "مشروبات غازية", price: 35 },
+        { id: 50, name: "مياه معدنية", price: 10 }
       ]
     },
     {
       category: "الموهيتو",
       image: "/images/menu/mojito.jpg",
       items: [
-        { id: 52, name: "كرز", price: 50 },
-        { id: 53, name: "خوخ", price: 50 },
-        { id: 54, name: "بطيخ", price: 50 },
-        { id: 55, name: "باشن فروت", price: 50 },
-        { id: 56, name: "بلو بري", price: 50 },
-        { id: 57, name: "بلاك بري", price: 50 },
-        { id: 58, name: "ليمون نعناع", price: 50 },
-        { id: 59, name: "فراولة", price: 50 }
+        { id: 51, name: "كرز", price: 50 },
+        { id: 52, name: "خوخ", price: 50 },
+        { id: 53, name: "بطيخ", price: 50 },
+        { id: 54, name: "باشن فروت", price: 50 },
+        { id: 55, name: "بلو بيري", price: 50 },
+        { id: 56, name: "بلاك بيري", price: 50 },
+        { id: 57, name: "ليمون نعناع", price: 50 },
+        { id: 58, name: "فراولة", price: 50 }
       ]
     }
   ];
@@ -286,7 +285,6 @@ export default function RestaurantMenu() {
           ))}
         </div>
 
-        {/* سلة الطلبات */}
         <div className="bg-[#2c1507]/95 border border-amber-500 p-6 rounded-2xl shadow-2xl backdrop-blur-md">
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-2xl font-bold text-amber-300">
@@ -317,9 +315,7 @@ export default function RestaurantMenu() {
                         <button onClick={() => updateQty(item.id, item.type, 1)} className="px-2.5 py-1 bg-amber-700 hover:bg-amber-600 text-amber-50 font-bold">+</button>
                       </div>
                       <span className="text-amber-400 font-bold w-16 text-left">{item.price * item.qty} ج.س</span>
-                      <button onClick={() => removeItem(item.id, item.type)} className="text-red-400 hover:text-red-300 text-lg font-bold px-1" title="حذف">
-                        ✕
-                      </button>
+                      <button onClick={() => removeItem(item.id, item.type)} className="text-red-400 hover:text-red-300 text-lg font-bold px-1" title="حذف">✕</button>
                     </div>
                   </div>
                   <input
