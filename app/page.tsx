@@ -144,50 +144,12 @@ export default function RestaurantMenu() {
       ]
     },
     {
-      category: "قهوة",
-      image: "/images/menu/coffee.jpg",
-      items: [
-        { id: 66, name: "فرنساوي", price: 60 },
-        { id: 67, name: "اسبريسو", price: 60 },
-        { id: 68, name: "نسكافيه", price: 50 },
-        { id: 69, name: "قهوة كبايه", price: 40 },
-        { id: 70, name: "قهوة بندق", price: 60 },
-        { id: 71, name: "قهوة بالشيكولاتة", price: 60 },
-        { id: 72, name: "قهوة فانيليا", price: 60 },
-        { id: 73, name: "قهوة تركي", price: 60 },
-        { id: 74, name: "جبنة في جبنة صغيرة", price: 150 },
-        { id: 75, name: "جبنة في جبنة وسط", price: 300 },
-        { id: 76, name: "جبنة في جبنة كبيرة", price: 450 }
-      ]
-    },
-    {
-      category: "مشروبات ساخنة",
-      image: "/images/menu/hot-drinks.jpg",
-      items: [
-        { id: 77, name: "شاي احمر", price: 30 },
-        { id: 78, name: "شاي بلبن", price: 60 },
-        { id: 79, name: "شاي اخضر", price: 60 },
-        { id: 80, name: "هوت شوكليت", price: 70 },
-        { id: 81, name: "سحلب", price: 70 },
-        { id: 82, name: "كاكاو بالبندق", price: 70 },
-        { id: 83, name: "اوفلتين", price: 50 },
-        { id: 84, name: "مكس كوفي", price: 50 },
-        { id: 85, name: "كبتشينو", price: 70 },
-        { id: 86, name: "امريكانو", price: 70 },
-        { id: 87, name: "ينسون", price: 30 },
-        { id: 88, name: "حلبة", price: 30 },
-        { id: 89, name: "كركدي", price: 30 },
-        { id: 90, name: "ليمون جنزبيل", price: 30 },
-        { id: 91, name: "قرفة", price: 30 }
-      ]
-    },
-    {
       category: "حلويات",
       image: "/images/menu/desserts.jpg",
       items: [
-        { id: 92, name: "أرز باللبن لوتس", price: 50 },
-        { id: 93, name: "ترافيل", price: 50 },
-        { id: 94, name: "كريم كراميل", price: 50 }
+        { id: 66, name: "أرز باللبن لوتس", price: 50 },
+        { id: 67, name: "ترافيل", price: 50 },
+        { id: 68, name: "كريم كراميل", price: 50 }
       ]
     }
   ];
