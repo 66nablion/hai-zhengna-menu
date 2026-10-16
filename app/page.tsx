@@ -40,100 +40,156 @@ export default function RestaurantMenu() {
       category: "سندوتشات",
       image: "/images/menu/sandwiches.jpg",
       items: [
-        { id: 1, name: "اقاشي لحم", ordinary: 90, jumbo: 135 },
-        { id: 2, name: "اقاشي فراخ", ordinary: 85, jumbo: 120 },
-        { id: 3, name: "اقاشي سمك", ordinary: 95, jumbo: 140 },
-        { id: 4, name: "شيش طاووق", ordinary: 85, jumbo: 120 },
-        { id: 5, name: "شيش كباب", ordinary: 120, jumbo: 150 },
-        { id: 6, name: "كفتة", ordinary: 110, jumbo: 140 },
-        { id: 7, name: "كريسبي", ordinary: 100, jumbo: 130 },
-        { id: 8, name: "كريسبي بالجبنة", ordinary: 110, jumbo: 145 },
-        { id: 9, name: "شيبس", ordinary: 50 }
+        { id: 1, name: "اقاشي لحم", ordinary: 100, jumbo: 145 },
+        { id: 2, name: "اقاشي فراخ", ordinary: 90, jumbo: 125 },
+        { id: 3, name: "اقاشي سمك", ordinary: 100, jumbo: 145 },
+        { id: 4, name: "شيش طاووق", ordinary: 100, jumbo: 130 },
+        { id: 5, name: "شيش كباب", ordinary: 125, jumbo: 160 },
+        { id: 6, name: "كفتة", ordinary: 120, jumbo: 150 },
+        { id: 7, name: "كريسبي", ordinary: 110, jumbo: 135 },
+        { id: 8, name: "كريسبي بالجبنة", ordinary: 125, jumbo: 150 },
+        { id: 9, name: "بطاطس", ordinary: 50 },
+        { id: 10, name: "بطاطس بالجبنة", ordinary: 75 }
+      ]
+    },
+    {
+      category: "برجر",
+      image: "/images/menu/burger.jpg",
+      items: [
+        { id: 11, name: "برجر عادي", price: 120 },
+        { id: 12, name: "برجر جامبو", price: 170 },
+        { id: 13, name: "إضافة هالبينو", price: 10 }
       ]
     },
     {
       category: "لحوم وأسماك بالكيلو",
       image: "/images/menu/grills.jpg",
       items: [
-        { id: 10, name: "كيلو شية ضاني جمر / صاج", ordinary: 850 },
-        { id: 11, name: "كيلو شية ضاني صافي جمر / صاج", ordinary: 1500 },
-        { id: 12, name: "كيلو فلتو لحم صافي صاج", ordinary: 1000 },
-        { id: 13, name: "كيلو اقاشي فراخ", ordinary: 1000 },
-        { id: 14, name: "كيلو اقاشي لحم", ordinary: 1250 },
-        { id: 15, name: "كيلو فيليه سمك مشوي / مقلي", ordinary: 600 }
+        { id: 14, name: "كيلو شية ضاني جمر / صاج", price: 850 },
+        { id: 15, name: "كيلو شية ضاني صافي جمر / صاج", price: 1500 },
+        { id: 16, name: "كيلو شية صافي فلتة", price: 1000 },
+        { id: 17, name: "ضلع ضاني 800 - 1000 جرام", price: 900 },
+        { id: 18, name: "كيلو اقاشي فراخ", price: 1050 },
+        { id: 19, name: "كيلو اقاشي لحم", price: 1250 },
+        { id: 20, name: "كيلو اقاشي سمك", price: 1250 },
+        { id: 21, name: "كيلو شيش طاووق", price: 700 },
+        { id: 22, name: "كيلو شيش كباب", price: 1250 },
+        { id: 23, name: "كيلو كفتة", price: 825 },
+        { id: 24, name: "كيلو بلطي مقلي", price: 225 },
+        { id: 25, name: "كيلو بلطي مشوي", price: 225 },
+        { id: 26, name: "كيلو فيليه مقلي", price: 600 },
+        { id: 27, name: "نصف كيلو فيليه مقلي", price: 300 },
+        { id: 28, name: "كيلو فيليه مشوي", price: 600 },
+        { id: 29, name: "نصف كيلو فيليه مشوي", price: 300 }
       ]
     },
     {
       category: "الوجبات",
       image: "/images/menu/meals.jpg",
       items: [
-        { id: 16, name: "وجبة اقاشي لحم (3 أسياخ)", ordinary: 230 },
-        { id: 17, name: "وجبة اقاشي فراخ (3 أسياخ)", ordinary: 200 },
-        { id: 18, name: "وجبة اقاشي سمك (3 أسياخ)", ordinary: 235 },
-        { id: 19, name: "وجبة شيش طاووق (3 أسياخ)", ordinary: 235 },
-        { id: 20, name: "وجبة شيش كباب (3 أسياخ)", ordinary: 320 },
-        { id: 21, name: "وجبة كفتة (3 أسياخ)", ordinary: 280 },
-        { id: 22, name: "وجبة كريسبي", ordinary: 250 },
-        { id: 23, name: "طبق بطاطس", ordinary: 60 },
-        { id: 24, name: "فرخة مشوية كاملة", ordinary: 390 },
-        { id: 25, name: "نصف فرخة مشوية", ordinary: 210 }
+        { id: 30, name: "وجبة اقاشي لحم (3 أسياخ)", price: 250 },
+        { id: 31, name: "وجبة اقاشي فراخ (3 أسياخ)", price: 200 },
+        { id: 32, name: "وجبة اقاشي سمك (3 أسياخ)", price: 250 },
+        { id: 33, name: "وجبة شيش طاووق (3 أسياخ)", price: 245 },
+        { id: 34, name: "وجبة شيش كباب (3 أسياخ)", price: 330 },
+        { id: 35, name: "وجبة كفتة (3 أسياخ)", price: 300 },
+        { id: 36, name: "وجبة كريسبي", price: 250 },
+        { id: 37, name: "فرخة كاملة مشوية على الجمر", price: 400 },
+        { id: 38, name: "نصف فرخة مشوية على الجمر", price: 220 },
+        { id: 39, name: "فرخة كاملة اقاشي", price: 440 },
+        { id: 40, name: "نصف فرخة اقاشي", price: 240 },
+        { id: 41, name: "طبق بطاطس", price: 60 },
+        { id: 42, name: "طبق بطاطس بالجبنة", price: 90 }
       ]
     },
     {
       category: "البيتزا والفطائر",
       image: "/images/menu/pizza.jpg",
       items: [
-        { id: 26, name: "بيتزا فراخ", small: 190, medium: 225 },
-        { id: 27, name: "بيتزا هوت دوق", small: 190, medium: 225 },
-        { id: 28, name: "بيتزا زنغنا مشكلة", small: 215, medium: 250 },
-        { id: 29, name: "بيتزا مارجريتا", small: 165, medium: 190 },
-        { id: 30, name: "فطيرة حلوة", small: 190, medium: 210 }
+        { id: 43, name: "بيتزا فراخ", small: 200, medium: 240 },
+        { id: 44, name: "بيتزا هوت دوق", small: 210, medium: 250 },
+        { id: 45, name: "بيتزا زنغنا مشكل", small: 240, medium: 275 },
+        { id: 46, name: "بيتزا مارجريتا", small: 170, medium: 200 }
       ]
     },
     {
-      category: "الإضافات",
-      image: "/images/menu/extras.jpg",
+      category: "سلطات",
+      image: "/images/menu/salads.jpg",
       items: [
-        { id: 31, name: "زيادة عيشة", price: 5 },
-        { id: 32, name: "زيادة 3 عيشات", price: 10 },
-        { id: 33, name: "شطة و بصل", price: 25 },
-        { id: 34, name: "طحينة", price: 30 },
-        { id: 35, name: "سلطة خضراء", price: 40 },
-        { id: 36, name: "سلطة دكوة", price: 50 },
-        { id: 37, name: "مخلل", price: 30 }
+        { id: 47, name: "سلطة دكوة", price: 60 },
+        { id: 48, name: "سلطة خضراء", price: 50 },
+        { id: 49, name: "سلطة طحينة", price: 35 },
+        { id: 50, name: "مخلل", price: 30 },
+        { id: 51, name: "زيادة بصل وليمون", price: 20 },
+        { id: 52, name: "زيادة 3 عيشات", price: 10 }
       ]
     },
     {
       category: "العصائر والمشروبات",
       image: "/images/menu/juices.jpg",
       items: [
-        { id: 38, name: "فراولة", price: 55 },
-        { id: 39, name: "فراولة بالحليب", price: 65 },
-        { id: 40, name: "مانجو", price: 60 },
-        { id: 41, name: "مانجو بالحليب", price: 70 },
-        { id: 42, name: "موز بالحليب", price: 65 },
-        { id: 43, name: "عصير كوكتيل", price: 70 },
-        { id: 44, name: "برتقال", price: 50 },
-        { id: 45, name: "ليمون", price: 45 },
-        { id: 46, name: "ليمون نعناع", price: 50 },
-        { id: 47, name: "عرديب", price: 70 },
-        { id: 48, name: "كركدي", price: 50 },
-        { id: 49, name: "مشروبات غازية", price: 35 },
-        { id: 50, name: "مياه معدنية", price: 10 }
+        { id: 53, name: "فراولة", price: 60 },
+        { id: 54, name: "فراولة بالحليب", price: 75 },
+        { id: 55, name: "مانجو", price: 60 },
+        { id: 56, name: "مانجو بالحليب", price: 75 },
+        { id: 57, name: "موز بالحليب", price: 75 },
+        { id: 58, name: "عصير كوكتيل", price: 80 },
+        { id: 59, name: "برتقال", price: 60 },
+        { id: 60, name: "ليمون", price: 50 },
+        { id: 61, name: "ليمون نعناع", price: 55 },
+        { id: 62, name: "تبلدي", price: 80 },
+        { id: 63, name: "عرديب", price: 80 },
+        { id: 64, name: "كركدي", price: 50 },
+        { id: 65, name: "غباشة", price: 60 },
+        { id: 66, name: "مشروبات غازية", price: 40 },
+        { id: 67, name: "مياه معدنية", price: 15 }
       ]
     },
     {
-      category: "الموهيتو",
-      image: "/images/menu/mojito.jpg",
+      category: "قهوة",
+      image: "/images/menu/coffee.jpg",
       items: [
-        { id: 51, name: "كرز", price: 50 },
-        { id: 52, name: "خوخ", price: 50 },
-        { id: 53, name: "بطيخ", price: 50 },
-        { id: 54, name: "باشن فروت", price: 50 },
-        { id: 55, name: "بلو بيري", price: 50 },
-        { id: 56, name: "بلاك بيري", price: 50 },
-        { id: 57, name: "ليمون نعناع", price: 50 },
-        { id: 58, name: "فراولة", price: 50 }
+        { id: 68, name: "فرنساوي", price: 60 },
+        { id: 69, name: "اسبريسو", price: 60 },
+        { id: 70, name: "نسكافيه", price: 50 },
+        { id: 71, name: "قهوة كبايه", price: 40 },
+        { id: 72, name: "قهوة بندق", price: 60 },
+        { id: 73, name: "قهوة بالشيكولاتة", price: 60 },
+        { id: 74, name: "قهوة فانيليا", price: 60 },
+        { id: 75, name: "قهوة تركي", price: 60 },
+        { id: 76, name: "جبنة في جبنة صغيرة", price: 150 },
+        { id: 77, name: "جبنة في جبنة وسط", price: 300 },
+        { id: 78, name: "جبنة في جبنة كبيرة", price: 450 }
+      ]
+    },
+    {
+      category: "مشروبات ساخنة",
+      image: "/images/menu/hot-drinks.jpg",
+      items: [
+        { id: 79, name: "شاي احمر", price: 30 },
+        { id: 80, name: "شاي بلبن", price: 60 },
+        { id: 81, name: "شاي اخضر", price: 60 },
+        { id: 82, name: "هوت شوكليت", price: 70 },
+        { id: 83, name: "سحلب", price: 70 },
+        { id: 84, name: "كاكاو بالبندق", price: 70 },
+        { id: 85, name: "اوفلتين", price: 50 },
+        { id: 86, name: "مكس كوفي", price: 50 },
+        { id: 87, name: "كبتشينو", price: 70 },
+        { id: 88, name: "امريكانو", price: 70 },
+        { id: 89, name: "ينسون", price: 30 },
+        { id: 90, name: "حلبة", price: 30 },
+        { id: 91, name: "كركدي", price: 30 },
+        { id: 92, name: "ليمون جنزبيل", price: 30 },
+        { id: 93, name: "قرفة", price: 30 }
+      ]
+    },
+    {
+      category: "حلويات",
+      image: "/images/menu/desserts.jpg",
+      items: [
+        { id: 94, name: "أرز باللبن لوتس", price: 50 },
+        { id: 95, name: "ترافيل", price: 50 },
+        { id: 96, name: "كريم كراميل", price: 50 }
       ]
     }
   ];
